@@ -27,7 +27,7 @@ model.eval().to(device)
 # Fonction d’analyse
 def analyser_image(image):
     if image is None:
-        return None, "❌ No image received."
+        return None, " No image received."
 
     img_rgb = image.convert("RGB")
     input_tensor = transform(img_rgb).unsqueeze(0).to(device)
